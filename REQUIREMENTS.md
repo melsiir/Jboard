@@ -1,0 +1,11 @@
+# User Requirements
+- Android keyboard app
+- Focus on coding from smartphone
+- Polished and modern UI
+- Customizable top rows of keys
+- Floating component
+- Typical keyboard layout for the rest
+- Backup and restore settings for language
+- Language: Java
+- GitHub Action file for building
+- .gitignore file

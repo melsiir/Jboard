@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Jboard</string>
+    <string name="ime_name">Jboard Keyboard</string>
+    <string name="settings_name">Jboard Settings</string>
+</resources>
