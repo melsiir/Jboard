@@ -5,7 +5,7 @@ plugins {
 android {
     namespace 'com.jboard.ime'
     compileSdk 36
-
+    
     defaultConfig {
         applicationId "com.jboard.ime"
         minSdk 21
