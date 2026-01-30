@@ -76,9 +76,13 @@ public class JboardIME extends InputMethodService implements KeyboardView.OnKeyb
                 break;
             case Keyboard.KEYCODE_DONE:
                 ic.sendKeyEvent(new android.view.KeyEvent(android.view.KeyEvent.ACTION_DOWN, android.view.KeyEvent.KEYCODE_ENTER));
+                ic.sendKeyEvent(new android.view.KeyEvent(android.view.KeyEvent.ACTION_UP, android.view.KeyEvent.KEYCODE_ENTER));
                 break;
             default:
                 char code = (char) primaryCode;
+                if (Character.isLetter(code) && keyboard.isShifted()) {
+                    code = Character.toUpperCase(code);
+                }
                 ic.commitText(String.valueOf(code), 1);
         }
     }
